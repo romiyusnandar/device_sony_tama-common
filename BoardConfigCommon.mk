@@ -59,6 +59,8 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += panic_on_err=1
 BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=somc,default_cmd_panel:config0
+BOARD_KERNEL_CMDLINE += androidboot.bootdevice=1d84000.ufshc
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
