@@ -78,3 +78,8 @@ ro.lmk.downgrade_pressure=100
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=120
 ro.lmk.log_stats=true
+
+# Zram
+ro.zram.first_wb_delay_mins=180
+ro.zram.mark_idle_delay_mins=60
+ro.zram.periodic_wb_delay_hours=24
