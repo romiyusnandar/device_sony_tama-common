@@ -21,3 +21,4 @@ set_prop(vendor_init, cust_system_prop)
 allow vendor_init sysfs_ssr_toggle:file w_file_perms;
 
 allow vendor_init proc_sched:file w_file_perms;
+allow vendor_init proc_watermark_scale_factor:file w_file_perms;
