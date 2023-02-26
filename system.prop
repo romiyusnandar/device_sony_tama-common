@@ -30,6 +30,7 @@ dalvik.vm.dex2oat64.enabled=true
 debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=0
 debug.sf.auto_latch_unsignaled=true
+debug.hwui.skia_atrace_enabled=false
 sdm.debug.disable_inline_rotator=1
 vendor.display.disable_rotator_downscale=1
 sdm.debug.disable_inline_rotator_secure=1
