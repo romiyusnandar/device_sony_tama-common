@@ -1569,3 +1569,7 @@ service kobjeventd /vendor/bin/hw/kobjeventd
     user system
     group system
     class main
+
+# Touch
+on property:dev.bootcomplete=1 && property:vendor.cover_state=*
+    write /sys/devices/common_touch/touch/cover_status ${vendor.cover_state}
