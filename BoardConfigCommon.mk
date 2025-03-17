@@ -117,6 +117,9 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 # Media
 TARGET_USES_ION := true
 
+# LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
