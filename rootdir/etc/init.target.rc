@@ -36,9 +36,6 @@ on early-init
     mkdir /bt_firmware 0771 system system
     symlink /data/tombstones /tombstones
 
-    mkdir /dev/stune
-    mount cgroup none /dev/stune nodev noexec nosuid schedtune
-
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
