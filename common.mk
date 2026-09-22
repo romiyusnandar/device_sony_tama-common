@@ -35,11 +35,18 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Dynamic partitions (retrofit)
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
+    odm \
+    product \
     system \
+    system_ext \
     vbmeta \
     vendor
 
