@@ -3,3 +3,8 @@ type diag_block_device, dev_type;
 type ltalabel_block_device, dev_type;
 type qnovo_block_device, dev_type;
 type tad_block_device, dev_type;
+
+# system/vendor back the retrofit super, so they must carry the
+# super_block_device_type attribute (see the "SELinux changes" section of
+# the retrofit dynamic partitions documentation).
+typeattribute system_block_device super_block_device_type;
