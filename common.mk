@@ -204,20 +204,14 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    copybit.sdm845 \
     gralloc.sdm845 \
-    hwcomposer.qcom \
-    libdisplayconfig.qti \
-    libdisplayconfig.system.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libtinyxml \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.allocator@1.0-service \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.memtrack-service
+    hwcomposer.sdm845 \
+    libsdedrm \
+    memtrack.sdm845 \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -410,7 +404,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client
+    hardware/qcom-caf/common/libqti-perfd-client \
+    vendor/qcom/opensource/display/sm8250 \
+    vendor/qcom/opensource/display-commonsys-intf/sm8250
 
 # Telephony
 PRODUCT_PACKAGES += \
