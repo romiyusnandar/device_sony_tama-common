@@ -85,22 +85,10 @@ vendor/lib64/libcsd-client.so
 vendor/lib64/libqtigef.so
 
 # Audio extensions
-vendor/lib/libbatterylistener.so
-vendor/lib/libcomprcapture.so
-vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
-vendor/lib/libsndmonitor.so
 vendor/lib/libsonydseehxwrapper.so
-vendor/lib/libspkrprot.so
-vendor/lib64/libbatterylistener.so
-vendor/lib64/libcomprcapture.so
-vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
-vendor/lib64/libhfp.so
-vendor/lib64/libsndmonitor.so
 vendor/lib64/libsonydseehxwrapper.so
-vendor/lib64/libspkrprot.so
 
 # Audio FX modules
 system/etc/permissions/audiosphere.xml
