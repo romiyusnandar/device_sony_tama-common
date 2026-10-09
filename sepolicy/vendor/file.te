@@ -49,8 +49,12 @@ type persist_wlan_file, file_type;
 type debugfs_sched_features, debugfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 
+# SSR
+type sysfs_ssr_toggle, fs_type, sysfs_type;
+
 # QNS
 type qns_data_file, file_type;
 
 # Socket
 type tad_socket, file_type;
+
