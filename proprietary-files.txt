@@ -85,20 +85,16 @@ vendor/lib64/libcsd-client.so
 vendor/lib64/libqtigef.so
 
 # Audio extensions
-vendor/lib/liba2dpoffload.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libcomprcapture.so
-vendor/lib/libexthwplugin.so
 vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libsonydseehxwrapper.so
 vendor/lib/libspkrprot.so
-vendor/lib64/liba2dpoffload.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libcomprcapture.so
-vendor/lib64/libexthwplugin.so
 vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
 vendor/lib64/libhfp.so
@@ -469,7 +465,6 @@ vendor/lib64/libhdr_tm.so|7ac38563480eab0583cb440e667a44cfa596167a
 # Display (SDM) - from PNX - RKQ1.200906.002
 vendor/lib/libdisplayqos.so|7b83c36716bae758c71d34b85401d7d77afa2c23
 vendor/lib/libqseed3.so|ea8d3775ab13c9ebfcdc2a02e60f56cc49a9d695
-vendor/lib/libsdedrm.so|b11f16f16cdeaecb492b7ff2274cc02bd604bf0f
 vendor/lib/libsdm-color.so|a18425c4e29bf76f25145d8f839108886283a45f
 vendor/lib/libsdm-diag.so|52c1b843b733165284445b00cb8525063994f502
 vendor/lib/libsdm-disp-vndapis.so|8f433d5996f90c584530ed5a6eba504c3b4cc2b1
@@ -477,7 +472,6 @@ vendor/lib/libsdmextension.so|872876273741968fda9006853979d9da1accc4fb
 vendor/lib/libtinyxml2_1.so|f00b8f6218271d57fd1fb67b192db956e42e66fb
 vendor/lib64/libdisplayqos.so|c3d45315871e402053dd1f353e9bde5cbf757277
 vendor/lib64/libqseed3.so|f5990f19a99ec5f33b5a262493c4e642a1429f69
-vendor/lib64/libsdedrm.so|5113b02d32b886281a790c8c323498195ec780f8
 vendor/lib64/libsdm-color.so|a2b413dea186f9049cb596a6414efc2739694059
 vendor/lib64/libsdm-diag.so|f484f554a015327acf7b5d1f8dbcdddf083c2f45
 vendor/lib64/libsdm-disp-vndapis.so|4c6916fed1e304effa4c06c7207fb0e1b604f3ae
