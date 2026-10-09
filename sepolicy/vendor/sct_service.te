@@ -11,8 +11,7 @@ init_daemon_domain(sct_service)
 allow sct_service self:capability net_raw;
 	
 	
-# Allow sct_service to create self:socket
-	
+# Allow sct_service to create sockets
+allow sct_service self:qipcrtr_socket create_socket_perms;
 allow sct_service self:socket create_socket_perms;
-	
-allowxperm sct_service self:socket ioctl msm_sock_ipc_ioctls;
+allowxperm sct_service self:qipcrtr_socket ioctl msm_sock_ipc_ioctls;
