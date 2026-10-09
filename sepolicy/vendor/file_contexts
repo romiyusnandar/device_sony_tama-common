@@ -15,6 +15,7 @@
 
 # Dev
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
+/dev/cpu_dma_latency                                            u:object_r:device_latency:s0
 
 # Block IO
 /dev/blkio(/.*)?                                                       u:object_r:blkio_file:s0
