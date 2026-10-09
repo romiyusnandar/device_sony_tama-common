@@ -85,7 +85,7 @@
 /(vendor|system/vendor)/bin/keyprovd		        u:object_r:keyprovd_exec:s0
 /(vendor|system/vendor)/bin/mlog_qmi_service            u:object_r:mlog_qmi_service_exec:s0
 /(vendor|system/vendor)/bin/sct_service			u:object_r:sct_service_exec:s0
-/(vendor|system/vendor)/bin/sensor_json_transfer.sh	u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/sensor_json_transfer.sh	u:object_r:vendor_qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/sony-modem-switcher    u:object_r:modem-switcher_exec:s0
 /(vendor|system/vendor)/bin/tad  			u:object_r:tad_exec:s0
 /(vendor|system/vendor)/bin/taimport_vendor             u:object_r:taimport_vendor_exec:s0
