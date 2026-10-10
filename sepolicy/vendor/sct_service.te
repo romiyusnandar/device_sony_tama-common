@@ -12,5 +12,5 @@ allow sct_service self:capability net_raw;
 	
 	
 # Allow sct_service to create sockets
-allow sct_service self:qipcrtr_socket create_socket_perms;
-allow sct_service self:socket create_socket_perms;
+allow sct_service self:qipcrtr_socket create_socket_perms_no_ioctl;
+allow sct_service self:socket create_socket_perms_no_ioctl;

@@ -5,5 +5,5 @@ init_daemon_domain(mlog_qmi_service)
 
 allow mlog_qmi_service self:capability { net_bind_service net_raw };
 
-allow mlog_qmi_service self:qipcrtr_socket create_socket_perms;
-allow mlog_qmi_service self:socket create_socket_perms;
+allow mlog_qmi_service self:qipcrtr_socket create_socket_perms_no_ioctl;
+allow mlog_qmi_service self:socket create_socket_perms_no_ioctl;

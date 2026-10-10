@@ -13,5 +13,5 @@ unix_socket_connect(ta_qmi_service, tad, tad)
 allow ta_qmi_service self:capability { net_raw setgid setuid };
 
 # Allow ta_qmi_service to create sockets
-allow ta_qmi_service self:qipcrtr_socket create_socket_perms;
-allow ta_qmi_service self:socket create_socket_perms;
+allow ta_qmi_service self:qipcrtr_socket create_socket_perms_no_ioctl;
+allow ta_qmi_service self:socket create_socket_perms_no_ioctl;

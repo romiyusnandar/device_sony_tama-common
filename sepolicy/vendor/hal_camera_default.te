@@ -24,7 +24,7 @@ unix_socket_connect(hal_camera_default, tad, tad)
 
 set_prop(hal_camera_default, vendor_camera_sensor_prop)
 
-allow hal_camera_default self:socket create_socket_perms;
+allow hal_camera_default self:socket create_socket_perms_no_ioctl;
 allow hal_camera_default sysfs_kgsl:file r_file_perms;
 
 allow hal_camera_default sysfs_leds:dir r_dir_perms;
