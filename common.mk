@@ -287,8 +287,7 @@ $(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage \
-    android.hardware.light@2.0.vendor
+    android.hardware.light-service.lineage
 
 # Media
 PRODUCT_PACKAGES += \
