@@ -270,6 +270,7 @@ PRODUCT_PACKAGES += \
 
 # Lineage Health
 PRODUCT_PACKAGES += \
+    framework_compatibility_matrix.lineage.xml \
     vendor.lineage.health-service.default
 
 # LiveDisplay
