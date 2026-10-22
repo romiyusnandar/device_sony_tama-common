@@ -18,8 +18,6 @@ else
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 endif
 
-PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
-
 # Disable Scudo
 PRODUCT_USE_SCUDO := false
 PRODUCT_DISABLE_SCUDO := true
