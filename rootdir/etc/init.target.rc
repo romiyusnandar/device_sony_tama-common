@@ -31,6 +31,8 @@
 #
 
 on early-init
+    setprop sys.usb.controller a600000.dwc3
+    setprop vendor.usb.controller a600000.dwc3
     mkdir /dsp 0771 media media
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system

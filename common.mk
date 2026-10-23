@@ -407,7 +407,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.columbus.use_ap_sensor=false
+    persist.columbus.use_ap_sensor=false \
+    ro.adb.secure=0 \
+    persist.sys.usb.config=adb \
+    persist.service.adb.enable=1
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
