@@ -132,6 +132,7 @@ ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+service.sf.prime_shader_cache=0
 
 # IMS
 persist.dbg.volte_avail_ovr=1
