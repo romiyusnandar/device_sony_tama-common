@@ -34,6 +34,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_VERSION := 4.19
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_BASE        := 0x00000000
@@ -52,6 +53,8 @@ BOARD_KERNEL_CMDLINE += androidboot.dynamic_partitions=true
 BOARD_KERNEL_CMDLINE += androidboot.dynamic_partitions_retrofit=true
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=1d84000.ufshc
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += loop.max_part=16
 BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=somc,default_cmd_panel:config0
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
