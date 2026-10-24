@@ -30,12 +30,6 @@ genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_
 genfscon debugfs /wlan0                                         u:object_r:debugfs_wlan:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state          u:object_r:sysfs_graphics:s0
 
-# Interconnect / Devfreq (Linux 4.19)
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-l3-lat   u:object_r:sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-l3-lat   u:object_r:sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw   u:object_r:sysfs_msm_subsys:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw   u:object_r:sysfs_msm_subsys:s0
-
 # SSR
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys0/restart_level   u:object_r:sysfs_ssr_toggle:s0
 genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys1/restart_level  u:object_r:sysfs_ssr_toggle:s0
