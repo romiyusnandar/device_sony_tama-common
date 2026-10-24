@@ -1508,6 +1508,7 @@ on property:persist.vendor.hvdcp_opti.start=1
     setprop persist.vendor.hvdcp_opti.start 0
 
 service fps_hal /vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service
+    interface android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.
