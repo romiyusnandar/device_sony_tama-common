@@ -33,6 +33,7 @@
 on early-init
     setprop sys.usb.controller a600000.dwc3
     setprop vendor.usb.controller a600000.dwc3
+    setprop sys.usb.configfs 1
     mkdir /dsp 0771 media media
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system
@@ -62,6 +63,7 @@ on post-fs
     setrlimit 8 67108864 67108864
 
     write /dev/ipa 1
+    setprop sys.usb.config adb
 
 on post-fs-data
     mkdir /data/tombstones 0771 system system

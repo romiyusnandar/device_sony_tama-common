@@ -582,11 +582,6 @@ vendor/firmware/fpctzfingerprint.b05
 vendor/firmware/fpctzfingerprint.b06
 vendor/firmware/fpctzfingerprint.b07
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
