@@ -1,6 +1,10 @@
 on post-fs-data
-    setprop ro.support.felica 1
+    chown nfc nfc /dev/pn553
+    chmod 0660 /dev/pn553
 
-# FeliCa/NFC
-    chown nfc nfc /dev/cxd224x-i2c
-    chown nfc nfc /dev/bd7602-i2c
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service.cxd22xx
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled

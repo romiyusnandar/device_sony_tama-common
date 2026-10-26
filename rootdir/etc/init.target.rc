@@ -51,6 +51,7 @@ on fs
     mount_all /vendor/etc/fstab.qcom
 
     mount tmpfs tmpfs /metadata size=16m
+
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     swapon_all /vendor/etc/fstab.qcom
