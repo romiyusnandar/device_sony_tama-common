@@ -657,14 +657,6 @@ on post-fs-data
     enable vendor.hvdcp_opti
     start vendor.hvdcp_opti
 
-    # Set USB mode to MSC for SDP charging
-    write /config/usb_gadget/g1/os_desc/use 0
-    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration mass_storage
-    write /config/usb_gadget/g1/idProduct 0xeeee
-    write /config/usb_gadget/g1/idVendor 0x0fce
-    symlink /config/usb_gadget/g1/functions/mass_storage.0 /config/usb_gadget/g1/configs/b.1/f1
-    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
-
     # create directory for widevine
     mkdir /data/vendor/wv 0700 media media
 
