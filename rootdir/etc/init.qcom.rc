@@ -889,11 +889,6 @@ on property:persist.vendor.battery.smt_chg=charging_suspend
 on property:persist.vendor.battery.smt_chg=charging_resume
     write /sys/class/power_supply/battery/smart_charging_interruption 0
 
-# Assure Bluetooth A2DP hardware offload is not disabled (JIML-163845)
-# This is only needed in Q AND only for products that have run on P.
-on property:persist.bluetooth.a2dp_offload.disabled=true
-    setprop persist.bluetooth.a2dp_offload.disabled false
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
