@@ -1547,3 +1547,10 @@ service kobjeventd /vendor/bin/hw/kobjeventd
 # Touch
 on property:dev.bootcomplete=1 && property:vendor.cover_state=*
     write /sys/devices/common_touch/touch/cover_status ${vendor.cover_state}
+
+# Disable legacy HIDL keymaster@3.0 in favor of AIDL KeyMint
+service keymaster-3-0 /vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+    override
+    class early_hal
+    disabled
+
