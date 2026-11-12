@@ -1531,7 +1531,6 @@ service vendor.semc.hardware.secd-1-0 /vendor/bin/hw/vendor.semc.hardware.secd@1
     class hal
     user system
     group system
-    disabled
 
 # Start Key Provision daemon
 service keyprov_daemon /vendor/bin/keyprovd
