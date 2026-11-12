@@ -1277,9 +1277,11 @@ on property:persist.vendor.radio.multisim.config=dsds
     enable vendor.qcrild2
 
 on property:persist.vendor.radio.multisim.config=ss
+    setprop persist.radio.multisim.config ss
     setprop ro.telephony.default_network 22
     setprop persist.vendor.radio.block_allow_data 1
     enable vendor.qcrild
+    stop vendor.qcrild2
 
 # Logcat dump daemon, dumps logs to logdump partition
 service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootdevice/by-name/logdump
