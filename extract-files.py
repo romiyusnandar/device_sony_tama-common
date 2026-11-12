@@ -83,6 +83,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/init.sony-modem-switcher.rc': blob_fixup()
         .regex_replace('/system/bin/sony-modem-switcher', '/vendor/bin/sony-modem-switcher')
         .regex_replace('persist.somc.cust.modem(0|1)', 'persist.vendor.somc.sim\\1'),
+    'vendor/lib64/libdsutils.so': blob_fixup()
+        .binary_regex_replace(b'\x1f\x0d\x00\x71\xa0\x12\x00\x54', b'\x99\x00\x00\x14\x1f\x20\x03\xd5'),
+    'vendor/lib/libdsutils.so': blob_fixup()
+        .binary_regex_replace(b'\x03\x29\x00\xf0\xc6\x80', b'\x00\xf0\xcc\xb8\x00\xbf'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

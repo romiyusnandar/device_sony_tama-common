@@ -334,6 +334,9 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
     netutils-wrapper-1.0
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml
+
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2.vendor
