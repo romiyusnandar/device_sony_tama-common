@@ -1524,7 +1524,6 @@ service vendor.somc.hardware.camera-provider-1-0 /vendor/bin/hw/vendor.somc.hard
     writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
     socket cammw_excal:ipc:9000 stream 0660 cameraserver camera
     socket cammw_excal:ipc:9001 stream 0660 cameraserver camera
-    disabled
 
 # start secd service
 service vendor.semc.hardware.secd-1-0 /vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
