@@ -1,6 +1,34 @@
 on post-fs-data
     chown nfc nfc /dev/pn553
     chmod 0660 /dev/pn553
+    chown nfc nfc /dev/cxd224x-i2c
+    chmod 0660 /dev/cxd224x-i2c
+    chown nfc nfc /dev/bd7602-i2c
+    chmod 0660 /dev/bd7602-i2c
+
+on boot
+    start init-tama-nfc-sh
+
+on property:vendor.nfc.chip=pn553
+    start vendor.nfc_hal_service
+
+on property:vendor.nfc.chip=cxd22xx
+    setprop ro.support.felica 1
+    start nfc_hal_service
+
+service init-tama-nfc-sh /vendor/bin/init.tama.nfc.sh
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
 
 service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service.cxd22xx
     override
