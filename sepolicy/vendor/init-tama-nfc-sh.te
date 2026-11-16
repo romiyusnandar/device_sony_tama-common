@@ -1,0 +1,12 @@
+type init-tama-nfc-sh, domain;
+type init-tama-nfc-sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(init-tama-nfc-sh)
+
+allow init-tama-nfc-sh vendor_shell_exec:file rx_file_perms;
+allow init-tama-nfc-sh vendor_toolbox_exec:file rx_file_perms;
+
+allow init-tama-nfc-sh device:dir r_dir_perms;
+allow init-tama-nfc-sh nfc_device:chr_file getattr;
+
+set_prop(init-tama-nfc-sh, vendor_nfc_prop)
