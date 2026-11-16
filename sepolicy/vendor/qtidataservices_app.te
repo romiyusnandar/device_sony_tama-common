@@ -1,1 +1,1 @@
-allow qtidataservices_app self:socket create;
+allow vendor_qtidataservices_app self:socket create;
