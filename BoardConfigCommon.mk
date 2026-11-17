@@ -57,8 +57,6 @@ BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += loop.max_part=16
 BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=somc,default_cmd_panel:config0
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += buildvariant=userdebug
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
