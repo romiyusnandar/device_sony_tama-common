@@ -182,6 +182,7 @@ PRODUCT_COPY_FILES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    charger_fstab.qti \
     fstab.qcom \
     idd.fstab \
     init.class_main.sh \
