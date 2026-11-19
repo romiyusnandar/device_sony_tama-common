@@ -14,6 +14,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oem_[ab]   u:object_r:system_block_device:s0
 
 # Dev
+/dev/ion                                                        u:object_r:ion_device:s0
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
 
 # Block IO
@@ -93,6 +94,7 @@
 /(vendor|system/vendor)/bin/wvkbd			u:object_r:wvkbd_exec:s0
 
 # Vendor HALs
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.display\.allocator.*                      u:object_r:hal_graphics_allocator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/fpc_fingerprint@2\.1_HIDL-service		        u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.tama        u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.secd@1\.0-service		u:object_r:hal_secd_default_exec:s0

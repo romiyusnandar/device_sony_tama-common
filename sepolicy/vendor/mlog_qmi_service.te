@@ -7,3 +7,4 @@ allow mlog_qmi_service self:capability { net_bind_service net_raw };
 
 allow mlog_qmi_service self:socket create_socket_perms;
 allowxperm mlog_qmi_service self:socket ioctl msm_sock_ipc_ioctls;
+allow mlog_qmi_service self:qipcrtr_socket create_socket_perms_no_ioctl;

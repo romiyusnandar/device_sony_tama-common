@@ -1,1 +1,9 @@
 allow hal_audio_default audio_hweffect_device:chr_file rw_file_perms;
+allow hal_audio_default ion_device:chr_file rw_file_perms;
+
+dontaudit hal_audio_default audio_prop:file read;
+r_dir_file(hal_audio_default, sysfs)
+
+# Allow hal_audio_default to read camera sensor props for Zoom Noise Reduction (ZNR)
+get_prop(hal_audio_default, vendor_camera_sensor_prop)
+

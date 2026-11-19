@@ -1,3 +1,7 @@
 allow system_server webview_zygote:process setsched;
 allow system_server app_zygote:process setsched;
 
+allow system_server ion_device:chr_file rw_file_perms;
+
+get_prop(system_server, demo_prop)
+

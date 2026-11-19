@@ -1,6 +1,7 @@
 genfscon sysfs /devices/virtual/input/input4/chip_pow    u:object_r:sysfs_camera:s0
 
 genfscon sysfs /devices/platform/soc/soc:fpc1145		u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1145/wakeup		u:object_r:sysfs_wakeup:s0
 
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/activate    u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/duration    u:object_r:sysfs_leds:s0
@@ -39,3 +40,8 @@ genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys4/restart_level u
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys5/restart_level    u:object_r:vendor_sysfs_ssr_toggle:s0
 genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys6/restart_level u:object_r:vendor_sysfs_ssr_toggle:s0
 genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys7/restart_level    u:object_r:vendor_sysfs_ssr_toggle:s0
+
+# Backlight
+genfscon sysfs /devices/virtual/backlight/panel0-backlight                      u:object_r:sysfs_leds:s0
+
+

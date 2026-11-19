@@ -3,4 +3,15 @@ type keyprovd_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(keyprovd)
 
-get_prop(keyprovd, suntory_prop)
+set_prop(keyprovd, suntory_prop)
+get_prop(keyprovd, vendor_tee_listener_prop)
+
+allow keyprovd tee_device:chr_file rw_file_perms;
+allow keyprovd ion_device:chr_file rw_file_perms;
+r_dir_file(keyprovd, firmware_file)
+
+unix_socket_connect(keyprovd, tad, tad)
+
+allow keyprovd mnt_vendor_file:dir rw_dir_perms;
+allow keyprovd persist_credmgr_file:dir create_dir_perms;
+allow keyprovd persist_credmgr_file:file create_file_perms;
