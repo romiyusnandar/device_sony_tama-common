@@ -239,6 +239,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     libion.vendor
 
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
