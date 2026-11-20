@@ -1,0 +1,14 @@
+//
+// SPDX-FileCopyrightText: 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libshim_camera_egl",
+    srcs: ["egl_display_array_shim.cpp"],
+    shared_libs: [
+        "libdl",
+    ],
+    vendor: true,
+    compile_multilib: "32",
+}

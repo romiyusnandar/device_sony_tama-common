@@ -174,7 +174,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     libcamera_metadata.vendor \
     libgui_shim \
-    libjpeg.vendor
+    libjpeg.vendor \
+    libshim_camera_egl
 
 # Component overrides
 PRODUCT_COPY_FILES += \
